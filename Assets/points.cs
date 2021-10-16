@@ -45,19 +45,19 @@ public class points : MonoBehaviour
 
             pointstext.text = "得点:" + point.ToString();
         }
-        // SmallCloudTagが付いたオブジェクトに接触した場合
+        // LargeCloudTagが付いたオブジェクトに接触した場合
         else if (collision.gameObject.tag == "LargeCloudTag")
         {
 
-            point += SmallCloud_Point;
+            point += LargeCloud_Point;
 
             pointstext.text = "得点:" + point.ToString();
         }
-        // LargeCloudTagが付いたオブジェクトに接触した場合
+        // SmallCloudTagが付いたオブジェクトに接触した場合
         else if (collision.gameObject.tag == "SmallCloudTag")
         {
 
-            point += LargeCloud_Point;
+            point += SmallCloud_Point;
 
             pointstext.text = "得点:" + point.ToString();
         }
